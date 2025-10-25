@@ -2202,7 +2202,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 30em;
+			height: 35em;
 			border-radius: 0;
 		}
 
@@ -2963,7 +2963,7 @@ input, select, textarea {
 				}
 
 			.image.main {
-				height: 30em;
+				height: 35em;
 			}
 
 		/* Header */
@@ -3317,15 +3317,3 @@ input, select, textarea {
 
 	}
 
-
-	/* Fix banner image cropping */
-.image.main img {
-  object-fit: contain !important;  /* ensures full image shows */
-  object-position: center !important;
-  width: 100%;
-  height: auto !important;  /* allows image to resize naturally */
-}
-
-.image.main {
-  height: auto !important; /* let the container expand to fit the image */
-}
