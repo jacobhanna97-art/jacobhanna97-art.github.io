@@ -2061,7 +2061,7 @@ input, select, textarea {
 			-webkit-object-fit: cover;
 			-ms-object-fit: cover;
 			object-fit: cover; 
-			object-position: center 95%;
+			object-position: center 20%;
 			display: block;
 			position: absolute;
 			top: 0;
@@ -3316,3 +3316,16 @@ input, select, textarea {
 			}
 
 	}
+
+
+	/* Fix banner image cropping */
+.image.main img {
+  object-fit: contain !important;  /* ensures full image shows */
+  object-position: center !important;
+  width: 100%;
+  height: auto !important;  /* allows image to resize naturally */
+}
+
+.image.main {
+  height: auto !important; /* let the container expand to fit the image */
+}
