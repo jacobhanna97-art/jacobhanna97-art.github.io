@@ -2060,7 +2060,8 @@ input, select, textarea {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
 			-ms-object-fit: cover;
-			object-fit: cover;
+			object-fit: cover; 
+			object-position: 50% 20%;
 			display: block;
 			position: absolute;
 			top: 0;
@@ -2201,7 +2202,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 35em;
+			height: 20em;
 			border-radius: 0;
 		}
 
@@ -2962,7 +2963,7 @@ input, select, textarea {
 				}
 
 			.image.main {
-				height: 35em;
+				height: 20em;
 			}
 
 		/* Header */
@@ -3144,7 +3145,7 @@ input, select, textarea {
 			}
 
 			.image.main {
-				height: 35em;
+				height: 20em;
 			}
 
 		/* Section/Article */
@@ -3316,17 +3317,3 @@ input, select, textarea {
 
 	}
 
-
-	/* Fix image5.png cropping only on mobile */
-@media screen and (max-width: 768px) {
-  .image.main img[src*="Image5.png"] {
-    object-fit: cover !important;   /* crop instead of stretching */
-    object-position: center bottom !important;  /* focus on center, crop bottom edge */
-    height: 60vh !important;        /* controls visible area height */
-    width: 100% !important;
-  }
-
-  .image.main {
-    height: auto !important;        /* prevent container overflow */
-  }
-}
