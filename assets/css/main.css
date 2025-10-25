@@ -3315,3 +3315,18 @@ input, select, textarea {
 			}
 
 	}
+
+
+	/* Fix image5.png cropping only on mobile */
+@media screen and (max-width: 768px) {
+  .image.main img[src*="Image5.png"] {
+    object-fit: cover !important;   /* crop instead of stretching */
+    object-position: center bottom !important;  /* focus on center, crop bottom edge */
+    height: 60vh !important;        /* controls visible area height */
+    width: 100% !important;
+  }
+
+  .image.main {
+    height: auto !important;        /* prevent container overflow */
+  }
+}
