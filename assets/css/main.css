@@ -3315,24 +3315,3 @@ input, select, textarea {
 			}
 
 	}
-
-
-
-	/* --- Mobile hero tuning --- */
-@media screen and (max-width: 736px) {
-  /* Adjust hero height for phones */
-  .image.main {
-    height: 56vh; /* change 56 to 50–60 if you want taller/shorter */
-  }
-
-  /* Shift crop upward so more of the top shows */
-  .image[data-position] img {
-    object-position: 50% 18% !important; /* 18% = near top */
-  }
-}
-
-/* Optional tablet adjustment */
-@media screen and (min-width: 737px) and (max-width: 980px) {
-  .image.main { height: 62vh; }
-  .image[data-position] img { object-position: 50% 25%; }
-}
